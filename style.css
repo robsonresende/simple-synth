@@ -3,7 +3,7 @@
   padding: 0;
   border: 0;
   font-family: sans-serif;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 :root {
@@ -27,7 +27,7 @@ button {
 }
 
 p, a, button, select {
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 a {
@@ -41,10 +41,10 @@ a {
   width: 70vw;
   height: 250px;
   padding: 1%;
-  display: grid;
   background-color: var(--blue);
-  border: 1px solid #ff0000;
+  /* border: 1px solid #ff0000; */
   display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .head-container {
@@ -55,7 +55,7 @@ a {
 }
 
 .detune {
-  padding-top: 0.5rem;
+  transform: translateY(5px);
 }
 
 .main-container {
@@ -182,7 +182,18 @@ a {
 
 .foot-container {
   display: grid;
-  margin: auto;
+  justify-content: center;
+  align-content: end;
+}
+
+#mysymbol {
+  color: #cc0000;
+}
+
+@media all and (min-width: 950px) {
+  .container {
+    height: 320px;
+  }
 }
 
 
