@@ -60,6 +60,10 @@ a {
   text-align: center;
 }
 
+#detune-input {
+  width: min(2rem);
+}
+
 .main-container {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
