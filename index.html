@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="icon" type="image/x-icon" href="noteIcon.ico">
+
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <title>Simple Synth</title>
@@ -16,7 +18,6 @@
       <div class="head-container">
 
         <div class="octave">
-          <!-- <p>OCTAVE</p> -->
           <form class="btn-style">
             <input type="radio" id="oct-1" name="oct-input" value="oct-1">
             <input type="radio" id="oct-0" name="oct-input" value="oct-0" checked>
@@ -25,21 +26,12 @@
         </div>
 
         <div class="wave">
-          <!-- <p>WAVE</p> -->
           <select name="wave" id="select-wave">
             <option value="sine">sine</option>
             <option value="square">square</option>
             <option value="triangle">triangle</option>
             <option value="sawtooth">sawtooth</option>
           </select>
-          <!--
-          <form class="btn-style">
-            <input type="radio" id="sine" name="wave-input" value="sine" checked>
-            <input type="radio" id="square" name="wave-input" value="square">
-            <input type="radio" id="triangle" name="wave-input" value="triangle">
-            <input type="radio" id="sawtooth" name="wave-input" value="sawtooth">
-          </form>
-        -->
         </div>
 
         <div class="detune">
@@ -70,10 +62,11 @@
       </div>
 
       <div class="foot-container">
-        <a href="https://www.robsonresende.com">By Robson Resende <span id="mysymbol">&#9829</span></a>
+        <a class="mylink" href="https://www.robsonresende.com">By Robson Resende <span id="mysymbol">&#9829</span></a>
       </div>
     </div>
 
-    
+     <script src="app.js"></script> 
+
   </body>
 </html>

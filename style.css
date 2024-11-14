@@ -11,6 +11,7 @@
   --white: #ffffff;
   --black: #000000;
   --shiny: #ffff80;
+  --gray: #aaaaaa;
 }
 
 body {
@@ -22,8 +23,14 @@ body {
   background-color: #ffffff;
 }
 
+
+
 button {
   padding: 2%;
+}
+
+button, select {
+  background-color: var(--white);
 }
 
 p, a, button, select {
@@ -32,8 +39,8 @@ p, a, button, select {
 
 a {
   text-decoration: none;
-  color: var(--black);
-  border: 1px solid var(--black);
+  color: #444444;
+  /* border: 1px solid #444444; */
   padding: 2px;
 }
 
@@ -42,7 +49,6 @@ a {
   height: 250px;
   padding: 1%;
   background-color: var(--blue);
-  /* border: 1px solid #ff0000; */
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
@@ -52,10 +58,6 @@ a {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1;
   text-align: center;
-}
-
-.detune {
-  transform: translateY(5px);
 }
 
 .main-container {
@@ -163,7 +165,7 @@ a {
 }
 
 .pianokey {
-  border: 1px solid #000000;
+  border: 1px solid var(--gray);
 }
 
 .wkey {
@@ -184,6 +186,10 @@ a {
   display: grid;
   justify-content: center;
   align-content: end;
+}
+
+.mylink {
+  background-color: var(--white);
 }
 
 #mysymbol {
